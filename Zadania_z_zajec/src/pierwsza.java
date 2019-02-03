@@ -44,13 +44,13 @@ public class pierwsza{
     private static void task(int numerZadania){
         switch (numerZadania){
             case 1:
-                String zadanie = zadanie1();
+                zadanie1();
                 break;
             case 2:
-                String zadanie2 = zadanie2();
+                zadanie2();
                 break;
             case 3:
-                String zadanie3 = zadanie3();
+                zadanie3();
                 break;
             case 4:
                 String zadanie4 = zadanie4();
@@ -59,44 +59,44 @@ public class pierwsza{
                 String zadanie5 = zadanie5();
                 break;
             case 6:
-                String zadanie6 = zadanie6();
+                zadanie6();
                 break;
             case 7:
-                String zadanie7 = zadanie7();
+                zadanie7();
                 break;
             case 8:
-                String zadanie8 = zadanie8();
+                zadanie8();
                 break;
             case 9:
-                String zadanie9 = zadanie9();
+                zadanie9();
                 break;
             case 10:
-                String zadanie10 = zadanie10();
+                zadanie10();
                 break;
             case 11:
-                String zadanie11 = zadanie11();
+                zadanie11();
                 break;
             case 12:
-                String zadanie12 = zadanie12();
+                zadanie12();
                 break;
             case 13:
-                String zadanie13 = zadanie13();
+                zadanie13();
                 break;
             default: break;
         }
     }
 
-    private static String zadanie1() {
+    private static void zadanie1() {
         System.out.println("podaj promien");
         Scanner inp = new Scanner(System.in);
         double promien = inp.nextInt();
         double pole = Math.PI * Math.pow(promien, 2);
         String message = "Pole kole to: " + pole + " jednostek do kwadratu ;)";
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie2() {
+    private static void zadanie2() {
         String message;
         System.out.println("Ile masz lat?");
         Scanner inp = new Scanner(System.in);
@@ -110,10 +110,10 @@ public class pierwsza{
         else message = "Mozesz wszystko!";
 
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie3() {
+    private static void zadanie3() {
         String message;
         System.out.println("To zadanie wyswietla liczby 12 8 5 od najmniejszej, do najwiekszej");
         int[] tab = new int[]{12,8,5};
@@ -130,10 +130,10 @@ public class pierwsza{
         }
         message = "Kolejnosc liczb to "+min+" "+mid+" "+max;
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie4() {
+    private static void zadanie4() {
         String message;
         System.out.println("Sprawdzmy czy stworzymy trojkat. Podaj przykladowa dlugosc boku 1");
         Scanner inp1 = new Scanner(System.in);
@@ -150,10 +150,10 @@ public class pierwsza{
         } else message = "Sorry, dude, z takich bokow nie stworzysz trojkata";
 
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie5() {
+    private static void zadanie5() {
         String message;
         System.out.println("Sprawdzmy czy stworzymy trojkat PROSTOKATNY. Podaj przykladowa dlugosc boku 1");
         Scanner inp1 = new Scanner(System.in);
@@ -170,20 +170,20 @@ public class pierwsza{
         } else message = "Sorry, dude, z takich bokow nie stworzysz trojkata prostakatnego";
 
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie6() {
+    private static void zadanie6() {
         String message = "Oto one: ";
         System.out.println("Wyswietle dla Ciebie liczby od 10 do 1");
         for (int i = 10; i>0; i--){
             message += i+ ", ";
         }
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie7() {
+    private static void zadanie7() {
         System.out.println("Wyswietle dla Ciebie liczby od 1 do 100 podzielne bez reszty");
         String message = "Przez 3: ";
         for (int i = 1; i<=100; i++){
@@ -206,10 +206,10 @@ public class pierwsza{
             }
         }
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie8() {
+    private static void zadanie8() {
         String message = "";
         System.out.println("Podaj DOLNA liczbe z zakresu przedzialu, ktorego liczby mam wypisac");
         Scanner inp1 = new Scanner(System.in);
@@ -232,10 +232,10 @@ public class pierwsza{
         } else message = "Serio, nie rob sobie jaj, ma po prostu wypisac "+zakres1+"?.... Slaaaabeeee";
 
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie9() {
+    private static void zadanie9() {
         String message = "Troche krzywo, wiem...";
         System.out.println("Tabliczka mnozenia 9x9");
         int a = 9;
@@ -247,10 +247,10 @@ public class pierwsza{
         }
 
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie10() {
+    private static void zadanie10() {
         String message;
         System.out.println("Obliczmy pierwiastki rownania kwadratowego. Podaj wspolczynnik a");
         Scanner inp1 = new Scanner(System.in);
@@ -290,11 +290,11 @@ public class pierwsza{
         }
 
         System.out.println(message);
-        return message;
+
     }
 
 
-    private static String zadanie11() {
+    private static void zadanie11() {
         String message = "";
         System.out.println("Wylosuje liczbe z podanego przez Ciebie przedzialu. Podaj DOLNA liczbe z zakresu przedzialu");
         Scanner inp1 = new Scanner(System.in);
@@ -320,10 +320,10 @@ public class pierwsza{
 
 
         System.out.println(message);
-        return message;
+
     }
 
-    private static String zadanie12() {
+    private static void zadanie12() {
         String message;
         System.out.println("Wylosuje liczbe z podanego przez Ciebie przedzialu. Nastepnie bedziesz musial odgadnac, jaka liczbe wylosowalam. Podaj DOLNA liczbe z zakresu przedzialu");
         Scanner inp1 = new Scanner(System.in);
@@ -361,11 +361,11 @@ public class pierwsza{
         }
 
         System.out.println(message);
-        return message;
+
     }
 
 
-    private static String zadanie13() {
+    private static void zadanie13() {
         String message = "";
         System.out.println("Zagrajmy w LOTTO.");
         System.out.println("Pobiore od Ciebie 6 unikalnych liczb z zakresu 1-49, po czym oszacuje po jakim czasie taki zestaw liczb moze byc trafiony - przy zalozeniu jednego losowania na dzien.");
@@ -390,24 +390,11 @@ public class pierwsza{
 
             //sprawdzam, czy unikalna
 
-            int unikat = 0;
-
-            for (int j = 0; j<=i; j++) {
-                if (liczba == LottoUzytkownika[j]) {
-                    unikat += 1;
-                }
-            }
-
-            while (unikat > 0) {
+            while (!unikatowy(i, liczba, LottoUzytkownika)) {
                 System.out.println("Miala byc unikalna, a taka juz wybrales, sprobuj jeszcze raz");
                 inp = new Scanner(System.in);
                 liczba = inp.nextInt();
-                unikat = 0;
-                for (int j = 0; j<=i; j++) {
-                    if (liczba == LottoUzytkownika[j]) {
-                        unikat += 1;
-                    }
-                }
+                unikatowy(i, liczba, LottoUzytkownika);
             }
 
             //wpisuje liczbe to zakresu
@@ -438,24 +425,12 @@ public class pierwsza{
 
                 //sprawdzam, czy unikalna
 
-                int unikat = 0;
-
-                for (int j = 0; j <= i; j++) {
-                    if (liczbaWylosowana == Lotto[j]) {
-                        unikat += 1;
-                    }
-                }
-
-                while (unikat > 0) {
+               while (!unikatowy(i, liczbaWylosowana, Lotto)){
                     los = new Random();
                     liczbaWylosowana = los.nextInt(49);
-                    unikat = 0;
-                    for (int j = 0; j <= i; j++) {
-                        if (liczbaWylosowana == Lotto[j]) {
-                            unikat += 1;
-                        }
+                    unikatowy(i, liczbaWylosowana, Lotto);
                     }
-                }
+
 
                 //wpisuje liczbe to zakresu
                 Lotto[i] = liczbaWylosowana;
@@ -484,10 +459,20 @@ public class pierwsza{
         }
 
         System.out.println(message);
-        return message;
 
     }
 
+        private static boolean unikatowy(int i,int lw, int[] losowany){
+        boolean unikat = true;
+
+        for (int j = 0; j<=i; j++) {
+            if (lw == losowany[j]) {
+                unikat = false;
+                if (!unikat) break;
+            }
+        }
+        return unikat;
+    }
 
 }
 
