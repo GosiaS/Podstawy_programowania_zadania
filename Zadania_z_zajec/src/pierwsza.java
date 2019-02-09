@@ -53,10 +53,10 @@ public class pierwsza{
                 zadanie3();
                 break;
             case 4:
-                String zadanie4 = zadanie4();
+                zadanie4();
                 break;
             case 5:
-                String zadanie5 = zadanie5();
+                zadanie5();
                 break;
             case 6:
                 zadanie6();
